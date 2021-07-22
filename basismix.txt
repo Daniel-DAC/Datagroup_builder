@@ -1,0 +1,6 @@
+C 6-31Gdp.txt
+P 6-31Gdp.txt
+H 6-31Gdp.txt
+O 6-31Gdp.txt
+Pd LANL2DZ.txt
+Xe STO3G.txt
