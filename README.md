@@ -7,8 +7,8 @@ and until the last exponen/coefficient.
 After that, we will need a file that has the atoms and coordinates that we will use to build out $DATA group.
 The basis structure of this file should be:
 
-C   6.0   X.XXXX   Y.YYYY   Z.ZZZZZ
-H   1.0   X.XXXX   Y.YYYY   Z.ZZZZZ
+C   6.0   X.XXXX   Y.YYYY   Z.ZZZZZ \n
+H   1.0   X.XXXX   Y.YYYY   Z.ZZZZZ \n
 
 Notice that this file should only have this information, no $DATA, $END or anything different. Coordinates in this 
 format can easily be obtained from most programs used in computational chemistry, as well as GAMESS official visualizer, 
