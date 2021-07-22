@@ -145,12 +145,17 @@ def sym2name(symbol):
     }
 
     return dictio[symbol]
+import sys 
 
-print("This program requires the following structure in the coordinate file:")
-print("AtomicSymbol AtomicNumber X.XXXXX Y.YYYYY Z.ZZZZZ")
+#print("This program requires the following structure in the coordinate file:")
+#print("AtomicSymbol AtomicNumber X.XXXXX Y.YYYYY Z.ZZZZZ")
 
-file = input("Provide the full name of the file with the coordinate system: \n")
-atomsnbasis = input("Provide the full name of the file with the atoms and basis sets to use \n")
+#file = input("Provide the full name of the file with the coordinate system: \n")
+#atomsnbasis = input("Provide the full name of the file with the atoms and basis sets to use \n")
+
+file = sys.argv[1]
+atomsnbasis = sys.argv[2]
+
 
 import os
 pwd = os.path.dirname(__file__)
@@ -175,9 +180,10 @@ with open(inputmix, 'r') as mix:
     for k in range(len(atomtypes)):
         atomname = sym2name(atomtypes[k])
         nametypes.append(atomname)
+print(atomtypes)
+print(nametypes)
+print(basissets)
 
-#    print(nametypes)
-#    print(basissets)
 functionstouse = []
 for i in range(len(atomtypes)):
     with open(basissets[i], 'r') as thebasefile:
@@ -238,3 +244,4 @@ with open(inputcoord, 'r') as theinput:
 for k in range(len(atomtypes)):
     filetoremove = os.path.join(pwd, nametypes[k])
     os.remove(filetoremove)
+
