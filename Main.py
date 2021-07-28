@@ -191,9 +191,9 @@ with open(inputmix, 'r') as mix:
     for k in range(len(atomtypes)):
         atomname = sym2name(atomtypes[k])
         nametypes.append(atomname)
-print(atomtypes)
-print(nametypes)
-print(basissets)
+#print(atomtypes)
+#print(nametypes)
+#print(basissets)
 
 functionstouse = []
 # Now we read the basis files, and write some temporary files with the info of each
