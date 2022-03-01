@@ -40,4 +40,3 @@ simply copy/paste to your input file.
 To run the code, you can go to the comand line/terminal in you device, then type 'python3 ./Main.py', and the program 
 will begin running. All files required, including an example, can be found in this repository. 
 
-Any bugs/problems can be reported to the Gordon group/GAMESS web page webmaster.
