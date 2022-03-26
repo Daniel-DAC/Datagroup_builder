@@ -1,0 +1,5 @@
+Improvements to add in the not so distant future:
+
+Capability to read the full input file (i.e., not having to begin with just
+coordinates, but reading them within the $DATA group, then adding the basis 
+set over the same file preserving things outside $DATA
